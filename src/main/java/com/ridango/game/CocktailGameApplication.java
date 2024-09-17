@@ -18,19 +18,19 @@ public class CocktailGameApplication implements CommandLineRunner {
 
 	}
 
-	@Bean
-	CommandLineRunner runner(CocktailGame cocktailGame, CocktailRestClient restClient) {
-		return args -> {
-			while (true) {
-				cocktailGame.startGame();
-
-				if (cocktailGame.isGameEnded()){
-					break;
-				}
-
-				cocktailGame.updateGame();
-			}
-
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner(CocktailGame cocktailGame, CocktailRestClient restClient) {
+//		return args -> {
+//			while (true) {
+//				cocktailGame.startGame();
+//
+//				if (cocktailGame.isGameEnded()){
+//					break;
+//				}
+//
+//				cocktailGame.updateGame();
+//			}
+//
+//		};
+//	}
 }

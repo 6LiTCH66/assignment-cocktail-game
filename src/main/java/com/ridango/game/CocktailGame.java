@@ -54,7 +54,6 @@ public class CocktailGame {
 
 
         while (attempts != 0) {
-            System.out.println(this.drink.strDrink());
             System.out.printf("You have %s attempts to guess the cocktail name!%n", attempts);
             System.out.println("Here is the instructions to make this cocktail: " + this.drink.strInstructions());
 
